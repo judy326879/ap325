@@ -17,3 +17,21 @@ int main(){
     }
     cout << dp[from][n] << endl;
 }
+/*
+//n^2
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n, si, len = 0;
+    cin >> n;
+    vector<int> p(n);
+    for(int i=0;i<n;++i){
+        int r = 0;
+        cin >> si;
+        while(r<len&&p[r]<si)++r;
+        p[r] = si;
+        if(r == len) len++;
+    }
+    cout << len << endl;
+}
+*/
