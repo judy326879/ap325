@@ -5,8 +5,8 @@ int main(){
     int n, m;
     cin >> n >> m;
     vector<int> w(n+1), p(n+1);
-    for(int i=1;i<=n;++i) cin >> w[i];
-    for(int i=1;i<=n;++i) cin >> p[i];
+    for(int i=1;i<=n;++i) cin >> w[i];//weight
+    for(int i=1;i<=n;++i) cin >> p[i];//prize
 
     for(int i=1;i<=n;++i){
         for(int j=0;j<w[i];++j){
