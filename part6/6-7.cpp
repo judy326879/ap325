@@ -1,3 +1,9 @@
+//2D0D
+//LCS
+//            | 0                             -> i = 0 / j = 0
+//lcs[i][j] = | lcs[i-1][j-1] + 1             -> s1[i] = s2[j]
+//            | max(lcs[i-1][j], lcs[i][j-1])
+//壓縮
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
