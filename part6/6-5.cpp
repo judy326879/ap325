@@ -15,6 +15,9 @@ int main(){
         for(int i1=i;i1<=n;++i1){
             LL cur = 0;
             for(int j=1;j<=m;++j){
+                //i, i1 ->上下界
+                //若j前面為正 -> 持續累加
+                //若為負 -> 該次重置max(cur, (LL)0)
                 cur = max(cur, (LL)0) + (Map[i1][j] - Map[i-1][j]);
                 Max = max(Max, cur);
             }
